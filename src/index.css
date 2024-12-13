@@ -10,6 +10,15 @@
     #161719 80%
   );
 } */
+
+@layer components {
+  .glass-card {
+    @apply bg-secondaryBG/60 backdrop-blur-lg border border-white/20 shadow-xl;
+  }
+  .glass-card2 {
+    @apply bg-primaryBG/60 backdrop-blur-lg border border-white/20 shadow-xl;
+  }
+}
 .heroScrolling {
   background-image: radial-gradient(circle, #6e5cb53d 0%, #161719 70%);
 }
@@ -18,4 +27,18 @@
 }
 .contactBG {
   background-image: radial-gradient(circle, #6e5cb565 0%, #161719 50%);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#home,
+#about,
+#skills,
+#experience,
+#portfolio,
+#contact {
+  scroll-margin-top: 100px; /* Adjust this value as needed */
+  /* padding-top: 100px; Optional: adds space at the top of each section */
 }

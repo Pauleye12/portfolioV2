@@ -1,14 +1,17 @@
 const About = () => {
   return (
-    <div className="w-full flex justify-center items-center  py-6 pt-32    ">
-      <div className="max-w-[1200px] px-4 w-full flex flex-col items-center text-primaryText  ">
+    <div
+      id="about"
+      className="w-full flex justify-center items-center px-5 lg:px-0 py-6 pt-32    "
+    >
+      <div className="max-w-[1200px] px-4 w-full flex flex-col items-center text-primaryText gap-10  ">
         <h1 className="w-full text-center text-4xl font-semibold relative text-white ">
           Meet me{" "}
           <div className="w-20 h-1 bg-secondaryBG rounded-xl absolute left-1/2 translate-x-[-50%] bottom-[-9px] "></div>{" "}
         </h1>
-        <div className="w-full flex items-center gap-5">
-          <div className="w-1/2  ">
-            <div className="max-w-[500px] w-full flex flex-col gap-3 text-lg ">
+        <div className="w-full flex flex-col lg:flex-row items-center gap-5">
+          <div className="lg:w-1/2 w-full   ">
+            <div className="max-w-[500px] w-full flex flex-col gap-3 text-lg text-justify ">
               <p>
                 I am a self-motivated and resilient Front-End Web Developer with
                 over 4 years of experience, collaborating on multiple web-based
@@ -33,7 +36,7 @@ const About = () => {
               </p>
             </div>
           </div>
-          <div className="w-1/2 aboutScrolling  ">
+          <div className="lg:w-1/2 w-full aboutScrolling  ">
             <img className="w-full" src="./images/official1.webp" alt="" />
           </div>
         </div>

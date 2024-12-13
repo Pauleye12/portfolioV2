@@ -54,7 +54,10 @@ const workExperience = [
 
 const Work = () => {
   return (
-    <div className="w-full my-20 flex items-center justify-center">
+    <div
+      id="experience"
+      className="w-full my-20 px-8 lg:px-0 flex items-center justify-center"
+    >
       <div className="w-full max-w-[1200px] text-white flex flex-col justify-center gap-20 ">
         <div className="w-full flex items-center justify-between text-center text-4xl font-semibold ">
           <div>
@@ -65,7 +68,7 @@ const Work = () => {
             <div className="w-28 h-1 bg-secondaryBG rounded-xl absolute left-1/2 translate-x-[-50%] bottom-[-16px] "></div>{" "}
           </h1>
         </div>
-        <div className="w-full grid mt-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
+        <div className="w-full grid mt-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-20 gap-7">
           {workExperience.map((item) => (
             <WorkCard key={item.id} {...item} />
           ))}

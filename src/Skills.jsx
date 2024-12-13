@@ -108,7 +108,10 @@ const scrollLeft = {
 
 const Skills = () => {
   return (
-    <div className="w-full pb-20  mt-32 text-primaryText flex items-center flex-col justify-center gap-20 overflow-hidden ">
+    <div
+      id="skills"
+      className="w-full pb-20 px-8 lg:px-0 mt-32 text-primaryText flex items-center flex-col justify-center gap-20 overflow-hidden "
+    >
       <div className="max-w-[1200px] w-full flex gap-24 flex-col items-center ">
         <div className="w-full flex items-center text-center justify-between ">
           <div>

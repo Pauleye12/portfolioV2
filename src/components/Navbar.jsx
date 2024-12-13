@@ -1,6 +1,6 @@
 const Navbar = () => {
   return (
-    <nav className="w-full px-3 flex justify-center items-center bg-primaryBG fixed top-0 left-0 z-50 ">
+    <nav className="w-full hidden px-3 lg:flex justify-center items-center bg-primaryBG fixed top-0 left-0 z-50 ">
       <div className="max-w-[1200px] w-full px-2 py-6 bg-primaryBG border-b flex justify-between items-center gap-5 text-primaryText border-solid border-[#78797B] ">
         <h1 className="text-xl">Pauleye</h1>
         <ul className="flex gap-5 items-center justify-between max-w-[600px] font-medium w-full ">

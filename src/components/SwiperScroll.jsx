@@ -89,12 +89,12 @@ const images = [
 
 const SwiperScroll = () => {
   return (
-    <div className="flex w-full h-full gap-6  ">
+    <div className="flex w-full h-full p-4 gap-6  ">
       <motion.div
         initial="initial"
         animate="animate"
         variants={scrollDown}
-        className=" w-full h-full overflow-hidden relative "
+        className=" w-full h-full overflow-hidden flex flex-col gap-8 items-center relative  "
       >
         {images.map((item, index) => {
           return (
@@ -104,7 +104,7 @@ const SwiperScroll = () => {
               href={item.url}
               target="_blank"
               rel="noopener noreferrer"
-              className={`flex justify-center w-full items-center rounded-md absolute `}
+              className={`flex justify-center w-full items-center rounded-md absolute  `}
             >
               <img
                 src={`/images/${item.img}.webp`}
@@ -119,7 +119,7 @@ const SwiperScroll = () => {
         initial="initial"
         animate="animate"
         variants={scrollDown}
-        className=" w-full h-full overflow-hidden relative "
+        className=" w-full hidden lg:block h-full overflow-hidden relative "
       >
         {images.reverse().map((item, index) => {
           return (

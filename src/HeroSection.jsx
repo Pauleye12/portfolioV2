@@ -1,10 +1,14 @@
+// import MobileScroll from "./components/MobileScroll";
 import SwiperScroll from "./components/SwiperScroll";
 
 const HeroSection = () => {
   return (
-    <div className="w-full min-h-screen h-full flex justify-center  px-5 pt-[90px] bg-primaryBG ">
-      <div className="max-w-[1200px] h-full w-full p-5 pb-0 pt-0 flex gap-10 items-center  ">
-        <div className=" flex flex-col w-[60%] h-full justify-center items-center gap-10 translate-y-[0px]  ">
+    <div
+      id="home"
+      className="w-full min-h-screen h-full flex justify-center  px-5 pt-[90px] bg-primaryBG "
+    >
+      <div className="max-w-[1200px] h-full w-full flex-col lg:flex-row p-5 pb-0 pt-0 flex gap-10 items-center  ">
+        <div className=" flex flex-col w-full lg:w-[60%] h-full justify-center items-center gap-10 translate-y-[0px]  ">
           <div className="flex flex-col items-start justify-center text-primaryText font-medium text-lg ">
             <p>Hi, I am</p>
             <h1 className="text-6xl text-secondaryText font-semibold">
@@ -24,8 +28,9 @@ const HeroSection = () => {
             Resume
           </button>
         </div>
-        <div className=" w-full h-[90vh] flex justify-center items-center heroScrolling ">
+        <div className=" w-full h-[60vh] lg:h-[90vh] flex justify-center items-center heroScrolling ">
           <SwiperScroll />
+          {/* <MobileScroll /> */}
         </div>
       </div>
     </div>

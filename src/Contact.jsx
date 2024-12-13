@@ -2,7 +2,10 @@ import { ContactRound, Mails, Linkedin, Github } from "lucide-react";
 
 const Contact = () => {
   return (
-    <div className="w-full my-20 flex items-center  justify-center">
+    <div
+      id="contact"
+      className="w-full my-20 px-8 lg:px-0 flex items-center  justify-center"
+    >
       <div className="w-full max-w-[1200px] text-white items-center flex flex-col justify-center gap-20 ">
         <div className="w-full flex items-center justify-between text-center text-4xl font-semibold ">
           <div>

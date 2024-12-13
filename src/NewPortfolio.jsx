@@ -82,7 +82,10 @@ const Projects = [
 
 const NewPortfolio = () => {
   return (
-    <div className="flex flex-col items-center justify-center my-20 gap-20">
+    <div
+      id="portfolio"
+      className="flex flex-col items-center justify-center px-8 lg:px-0 my-20 gap-20"
+    >
       <div className="w-full max-w-[1200px] flex items-center justify-between text-center text-4xl font-semibold ">
         <div>
           <GalleryVertical className="text-secondaryBG" size={40} />
@@ -108,7 +111,7 @@ const NewPortfolio = () => {
           </div>
 
           {/* Right Scrollable Content */}
-          <div className="lg:w-1/2 w-full h-full p-5 pt-28  pb-20  bg-gray-300">
+          <div className="lg:w-1/2 w-full h-full p-1 lg:p-5 pt-10 lg:pt-28  lg:pb-20 pb-8  bg-gray-300">
             <div className="flex flex-col w-full items-center gap-20 ">
               {Projects.map((project, index) => (
                 <PortfolioCard key={index} project={project} />
