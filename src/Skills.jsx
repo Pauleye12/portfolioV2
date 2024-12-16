@@ -133,21 +133,21 @@ const Skills = () => {
         variants={scrollLeft}
         initial="initial"
         animate="animate"
-        className=" w-full relative"
+        className=" relative  "
       >
-        <div className=" bg-auxilaryBG flex gap-5  items-center p-4 w-full ">
+        <div className="bg-auxilaryBG flex gap-5 items-center p-4 min-w-max w-full ">
           {skillList.map((skill, index) => (
             <img
-              className="w-16 object-contain  "
+              className="w-16 object-contain"
               key={index}
               src={`./images/${skill.name}.webp`}
             />
           ))}
         </div>
-        <div className="flex bg-auxilaryBG gap-5 absolute left-[100%] top-0 w-full  items-center p-4 ">
+        <div className="flex bg-auxilaryBG gap-5 absolute left-[100%] top-0 w-full items-center p-4 ">
           {skillList.map((skill, index) => (
             <img
-              className="w-16 object-contain  "
+              className="w-16 object-contain"
               key={index}
               src={`./images/${skill.name}.webp`}
             />

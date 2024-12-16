@@ -1,9 +1,43 @@
 import PropTypes from "prop-types";
 import { Dot } from "lucide-react";
+import { motion } from "framer-motion";
+
+//Animation Variants
+const workCard = {
+  initial: {
+    scale: 0,
+    opacity: 0,
+  },
+  inView: {
+    scale: 1,
+    opacity: 1,
+    transition: {
+      duration: 0.45,
+      ease: "easeOut",
+    },
+  },
+  onHover: {
+    scale: 1.03,
+    transition: {
+      duration: 0.35,
+      ease: "easeOut",
+    },
+  },
+};
 
 const WorkCard = ({ title, company, duration, description, image }) => {
   return (
-    <div className=" shadow-md  shadow-[#6e5cb536] text-primaryText rounded-3xl  flex flex-col gap-2 px-5 p-4 hover:scale-110 hover:shadow-lg hover:shadow-[#6e5cb536] cursor-pointer transition-all duration-500 ">
+    <motion.div
+      variants={workCard}
+      whileHover={{
+        scale: 1.03,
+        transition: {
+          duration: 0.35,
+          ease: "easeOut",
+        },
+      }}
+      className=" shadow-md  shadow-[#6e5cb536] text-primaryText rounded-3xl  flex flex-col gap-2 px-5 p-4  hover:shadow-lg hover:shadow-[#6e5cb536] cursor-pointer "
+    >
       <div className="border-b border-solid border-primaryText flex justify-center items-center h-[250px]">
         <img className="object-cover" src={image} alt="" />
       </div>
@@ -32,7 +66,7 @@ const WorkCard = ({ title, company, duration, description, image }) => {
           </div>
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 };
 

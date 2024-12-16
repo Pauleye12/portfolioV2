@@ -1,5 +1,22 @@
 import { GalleryVertical } from "lucide-react";
 import PortfolioCard from "./components/PortfolioCard";
+import { motion } from "framer-motion";
+
+//Animation Variants
+const textAnime = {
+  initial: {
+    scale: 0,
+    opacity: 0,
+  },
+  inView: {
+    scale: 1,
+    opacity: 1,
+    transition: {
+      duration: 0.75,
+      ease: "easeOut",
+    },
+  },
+};
 
 const Projects = [
   {
@@ -100,14 +117,19 @@ const NewPortfolio = () => {
         <div className=" flex flex-col md:flex-row gap-4  w-full  ">
           {/* Left Sticky Section */}
           <div className="lg:w-1/2 w-full   p-5">
-            <div className="sticky lg:h-screen flex flex-col justify-start lg:pt-44 items-center top-5">
+            <motion.div
+              variants={textAnime}
+              initial="initial"
+              whileInView={"inView"}
+              className="sticky lg:h-screen flex flex-col justify-start lg:pt-44 items-center top-5"
+            >
               <h2 className=" text-4xl w-full text-left font-medium text-[#343433]">
                 My Most Recent works.
               </h2>
               <p className="mt-2 text-[#343433] w-full text-left text-lg ">
                 View Demo for full functionality...
               </p>
-            </div>
+            </motion.div>
           </div>
 
           {/* Right Scrollable Content */}

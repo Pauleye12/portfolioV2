@@ -1,5 +1,6 @@
 import WorkCard from "./components/WorkCard";
 import { Briefcase } from "lucide-react";
+import { motion } from "framer-motion";
 
 const workExperience = [
   {
@@ -52,6 +53,19 @@ const workExperience = [
   //},
 ];
 
+//Animation Variants
+const cardWrapper = {
+  initial: {
+    opacity: 1,
+  },
+  inView: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.4,
+      when: "beforeChildren",
+    },
+  },
+};
 const Work = () => {
   return (
     <div
@@ -68,11 +82,16 @@ const Work = () => {
             <div className="w-28 h-1 bg-secondaryBG rounded-xl absolute left-1/2 translate-x-[-50%] bottom-[-16px] "></div>{" "}
           </h1>
         </div>
-        <div className="w-full grid mt-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-20 gap-7">
+        <motion.div
+          variants={cardWrapper}
+          initial="initial"
+          whileInView={"inView"}
+          className="w-full grid mt-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-20 gap-7"
+        >
           {workExperience.map((item) => (
             <WorkCard key={item.id} {...item} />
           ))}
-        </div>
+        </motion.div>
       </div>
     </div>
   );
