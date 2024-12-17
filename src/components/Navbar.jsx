@@ -190,7 +190,10 @@ const Navbar = () => {
           initial="initial"
           animate="animate"
           whileHover={"onHover"}
-          className="bg-secondaryBG px-5 py-2 text-white font-medium rounded-md "
+          className="bg-secondaryBG px-5 py-2 text-white font-medium rounded-md"
+          onClick={() =>
+            window.open("/assets/Pauleye_Resume_2025.pdf", "_blank")
+          }
         >
           Resume
         </motion.button>

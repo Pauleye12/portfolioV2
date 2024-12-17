@@ -105,16 +105,18 @@ const HeroSection = () => {
               Development.
             </p>
           </motion.div>
-          <motion.button
+          <motion.a
             variants={resumeBtn}
             initial="initial"
             animate="animate"
             whileHover={"hover"}
+            href="/assets/Pauleye_Resume_2025.pdf"
+            download
             whileInView={"inView"}
             className=" text-white px-6 py-3 rounded-lg bg-secondaryBG font-medium hover:scale-150 text-lg self-end  "
           >
             Resume
-          </motion.button>
+          </motion.a>
         </div>
         <div className=" w-full h-[60vh] lg:h-[90vh] flex justify-center items-center heroScrolling ">
           <SwiperScroll />
