@@ -31,7 +31,7 @@ const Projects = [
   {
     title: "comment app",
     subtext:
-      "A personal project I worked on. it allowes users to post, reply, delete and vote comments.",
+      "A personal project I worked on. it allows users to post, reply, delete and vote comments.",
     stacks: "ReactJS, TailwindCSS, framer-motion",
     img: "comment-app",
     url: "https://interactivecommentapp.netlify.app",

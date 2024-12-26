@@ -79,7 +79,7 @@ const HeroSection = () => {
           >
             <p>Hi, I am</p>
             <div
-              className="flex text-6xl 
+              className="flex text-5xl 
             text-secondaryText font-semibold "
             >
               {text.split("").map((char, index) => (
@@ -96,11 +96,11 @@ const HeroSection = () => {
               ))}
             </div>
             <h2 className="text-2xl mt-3">Frontend web developer</h2>
-            <p className="mt-5">
+            <p className="mt-5 font-normal text-base">
               Vast Experience in Crafting Fast, Responsive, and User-Friendly
               Interfaces.
             </p>
-            <p className="mt-2">
+            <p className="mt-2 font-normal text-base ">
               Bridging Design and Functionality with Seamless Frontend
               Development.
             </p>

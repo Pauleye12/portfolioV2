@@ -50,7 +50,7 @@ const About = () => {
             <div className="max-w-[500px] w-full flex flex-col gap-3 text-lg text-justify ">
               <p>
                 I am a self-motivated and resilient Front-End Web Developer with
-                over 4 years of experience, collaborating on multiple web-based
+                years of experience, collaborating on multiple web-based
                 projects.
               </p>{" "}
               <p>

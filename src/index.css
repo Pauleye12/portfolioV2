@@ -10,7 +10,10 @@
     #161719 80%
   );
 } */
-
+* {
+  font-family: "Orbitron", serif;
+  letter-spacing: px;
+}
 @layer components {
   .glass-card {
     @apply bg-secondaryBG/60 backdrop-blur-lg border border-white/20 shadow-xl;
