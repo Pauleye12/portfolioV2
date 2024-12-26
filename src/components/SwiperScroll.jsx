@@ -16,18 +16,17 @@ const scrollDown = {
 };
 const scrollDownContainer = {
   initial: {
-    opacity: 1,
-    bottom: "140%",
+    y: 0,
   },
-  animate: {
-    opacity: 1,
-
-    bottom: "-120px",
-    transition: {
-      duration: 20,
-      ease: "linear",
-      repeat: Infinity,
-    },
+  animate(dir) {
+    return {
+      y: dir === -1 ? "100%" : "-100%",
+      transition: {
+        duration: 120,
+        ease: "linear",
+        repeat: Infinity,
+      },
+    };
   },
 };
 const scrollDownContainer2 = {
@@ -89,57 +88,103 @@ const images = [
 
 const SwiperScroll = () => {
   return (
-    <div className="flex w-full h-full p-4 gap-6  ">
-      <motion.div
-        initial="initial"
-        animate="animate"
-        variants={scrollDown}
-        className=" w-full h-full overflow-hidden flex flex-col gap-8 items-center relative  "
-      >
-        {images.map((item, index) => {
-          return (
-            <motion.a
-              variants={scrollDownContainer}
-              key={index}
-              href={item.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={`flex justify-center w-full items-center rounded-md absolute  `}
-            >
-              <img
-                src={`/images/${item.img}.webp`}
-                alt=""
-                className="max-w-[400px] aspect-video w-full"
-              />
-            </motion.a>
-          );
-        })}
-      </motion.div>
-      <motion.div
-        initial="initial"
-        animate="animate"
-        variants={scrollDown}
-        className=" w-full hidden lg:block h-full overflow-hidden relative "
-      >
-        {images.reverse().map((item, index) => {
-          return (
-            <motion.a
-              variants={scrollDownContainer2}
-              key={index}
-              href={item.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={`flex justify-center w-full items-center rounded-md absolute `}
-            >
-              <img
-                src={`/images/${item.img}.webp`}
-                alt=""
-                className="max-w-[450px] aspect-video w-full"
-              />
-            </motion.a>
-          );
-        })}
-      </motion.div>
+    <div className="flex w-full h-full overflow-hidden p-4 gap-6  relative">
+      <div className="flex flex-col gap-4 w-full relative">
+        <motion.div
+          initial="initial"
+          animate="animate"
+          variants={scrollDownContainer}
+          className="flex flex-col gap-4 pb-4 w-full relative"
+        >
+          <div className=" w-full flex flex-col gap-4 items-center relative  ">
+            {images.map((item, index) => {
+              return (
+                <a
+                  key={index}
+                  href={item.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`flex justify-center w-full items-center rounded-md  `}
+                >
+                  <img
+                    src={`/images/${item.img}.webp`}
+                    alt=""
+                    className="max-w-[400px] aspect-video w-full block"
+                  />
+                </a>
+              );
+            })}
+          </div>
+          <div className=" w-full flex flex-col gap-4 items-center absolute top-full left-0 w-full">
+            {images.map((item, index) => {
+              return (
+                <a
+                  key={index}
+                  href={item.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`flex justify-center w-full items-center rounded-md  `}
+                >
+                  <img
+                    src={`/images/${item.img}.webp`}
+                    alt=""
+                    className="max-w-[400px] aspect-video w-full"
+                  />
+                </a>
+              );
+            })}
+          </div>
+        </motion.div>
+      </div>
+      <div className="flex flex-col gap-4 w-full relative">
+        <motion.div
+          custom={-1}
+          initial="initial"
+          animate="animate"
+          variants={scrollDownContainer}
+          className="flex flex-col gap-4 pt-4 w-full relative"
+        >
+          <div className=" w-full flex flex-col gap-4 items-center relative  ">
+            {images.map((item, index) => {
+              return (
+                <a
+                  key={index}
+                  href={item.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`flex justify-center w-full items-center rounded-md  `}
+                >
+                  <img
+                    src={`/images/${item.img}.webp`}
+                    alt=""
+                    className="max-w-[400px] aspect-video w-full block"
+                  />
+                </a>
+              );
+            })}
+          </div>
+          <div className=" w-full flex flex-col gap-4 items-center absolute bottom-full left-0 w-full">
+            {images.map((item, index) => {
+              return (
+                <a
+                  key={index}
+                  href={item.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`flex justify-center w-full items-center rounded-md  `}
+                >
+                  <img
+                    src={`/images/${item.img}.webp`}
+                    alt=""
+                    className="max-w-[400px] aspect-video w-full"
+                  />
+                </a>
+              );
+            })}
+          </div>
+        </motion.div>
+      </div>
+      <div className="bg-[linear-gradient(to_bottom,#161719,transparent,#161719)] absolute inset-0"></div>
     </div>
   );
 };
