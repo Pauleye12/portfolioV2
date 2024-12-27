@@ -184,7 +184,7 @@ const SwiperScroll = () => {
           </div>
         </motion.div>
       </div>
-      <div className="bg-[linear-gradient(to_bottom,#161719,transparent,#161719)] absolute inset-0"></div>
+      <div className="bg-[linear-gradient(to_bottom,#161719,transparent,#161719)] absolute inset-0 pointer-events-none"></div>
     </div>
   );
 };
