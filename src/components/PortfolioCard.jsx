@@ -19,13 +19,13 @@ const PortfolioCard = ({ project }) => {
           <p> {project.subtext} </p>
           <p>
             Stacks:{" "}
-            <span className="text-secondaryText font-medium capitalize">
+            <span className="text-secondaryText  capitalize">
               {project.stacks}
             </span>
           </p>
         </div>
         <a
-          className=" bg-secondaryBG px-5 max-w-[120px] w-full py-3 rounded-md text-white text-center ml-4 font-medium  "
+          className=" bg-secondaryBG px-4 max-w-[130px] w-full py-2 rounded-md text-white text-center ml-4  "
           href={project.url}
           target="_blank"
           rel="noopener noreferrer"

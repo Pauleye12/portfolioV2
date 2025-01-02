@@ -1,19 +1,19 @@
 import { motion } from "framer-motion";
 
-const scrollDown = {
-  initial: {
-    opacity: 1,
-    y: 0,
-  },
-  animate: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0,
-      staggerChildren: 5,
-    },
-  },
-};
+// const scrollDown = {
+//   initial: {
+//     opacity: 1,
+//     y: 0,
+//   },
+//   animate: {
+//     opacity: 1,
+//     y: 0,
+//     transition: {
+//       duration: 0,
+//       staggerChildren: 5,
+//     },
+//   },
+// };
 const scrollDownContainer = {
   initial: {
     y: 0,
@@ -29,21 +29,21 @@ const scrollDownContainer = {
     };
   },
 };
-const scrollDownContainer2 = {
-  initial: {
-    opacity: 1,
-    bottom: "-120px",
-  },
-  animate: {
-    opacity: 1,
-    bottom: "140%",
-    transition: {
-      duration: 20,
-      ease: "linear",
-      repeat: Infinity,
-    },
-  },
-};
+// const scrollDownContainer2 = {
+//   initial: {
+//     opacity: 1,
+//     bottom: "-120px",
+//   },
+//   animate: {
+//     opacity: 1,
+//     bottom: "140%",
+//     transition: {
+//       duration: 20,
+//       ease: "linear",
+//       repeat: Infinity,
+//     },
+//   },
+// };
 
 const images = [
   {
@@ -115,7 +115,7 @@ const SwiperScroll = () => {
               );
             })}
           </div>
-          <div className=" w-full flex flex-col gap-4 items-center absolute top-full left-0 w-full">
+          <div className=" w-full flex flex-col gap-4 items-center absolute top-full left-0 ">
             {images.map((item, index) => {
               return (
                 <a
@@ -163,7 +163,7 @@ const SwiperScroll = () => {
               );
             })}
           </div>
-          <div className=" w-full flex flex-col gap-4 items-center absolute bottom-full left-0 w-full">
+          <div className=" w-full flex flex-col gap-4 items-center absolute bottom-full left-0 ">
             {images.map((item, index) => {
               return (
                 <a
@@ -184,7 +184,7 @@ const SwiperScroll = () => {
           </div>
         </motion.div>
       </div>
-      <div className="bg-[linear-gradient(to_bottom,#161719,transparent,#161719)] absolute inset-0"></div>
+      <div className="bg-[linear-gradient(to_bottom,#161719,transparent,#161719)] absolute inset-0 pointer-events-none "></div>
     </div>
   );
 };

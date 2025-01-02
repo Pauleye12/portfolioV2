@@ -67,7 +67,7 @@ const navLink = {
 const linkUnderline = {
   initial: {
     scale: 1,
-    width: 3,
+    width: 0,
     opacity: 1,
   },
   onHover: {
