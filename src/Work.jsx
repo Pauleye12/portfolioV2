@@ -36,7 +36,7 @@ const workExperience = [
     duration: "2021 - 2023",
     description: [
       "Developed and maintained the website using React, TailwindCSS, and other front-end technologies.   ",
-      "ensured broswer optimization",
+      "Ensured broswer optimization",
     ],
     image: "./images/NFTMafia.webp",
   },

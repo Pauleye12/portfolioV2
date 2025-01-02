@@ -60,7 +60,7 @@ const WorkCard = ({ title, company, duration, description, image }) => {
               <Dot size={30} className="text-secondaryBG " />
             </div>
 
-            <p className=" " key={index}>
+            <p className="capitalize " key={index}>
               {item}
             </p>
           </div>

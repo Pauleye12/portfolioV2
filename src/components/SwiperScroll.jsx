@@ -136,7 +136,7 @@ const SwiperScroll = () => {
           </div>
         </motion.div>
       </div>
-      <div className="flex flex-col gap-4 w-full relative">
+      <div className="lg:flex flex-col gap-4 w-full hidden relative">
         <motion.div
           custom={-1}
           initial="initial"
