@@ -5,9 +5,21 @@ import { motion } from "framer-motion";
 const workExperience = [
   {
     id: 1,
+    title: "Frontend Developer",
+    company: "Xclaim Labs",
+    duration: "2025 - Present",
+    description: [
+      "Building web applications interfaces using ReactJS and TailwindCSS.",
+      "Collaborating with designers and backend developers to implement UI designs.",
+      "Consuming RESTful APIs and integrating them into web applications.",
+    ],
+    image: "./images/xclaimLabs.svg",
+  },
+  {
+    id: 2,
     title: "Technical Assistant",
     company: "AIdotHub",
-    duration: "2024 - Present",
+    duration: "2024 - 2025",
     description: [
       "Assisting in building UI components using NextJS and TailwindCSS.",
       "Writing Python code for AI applications.",
@@ -18,7 +30,7 @@ const workExperience = [
     image: "./images/aidothub.webp",
   },
   {
-    id: 2,
+    id: 3,
     title: "Frontend Developer",
     company: "Palette Labs (Beings Art)",
     duration: "2022 - 2023",
@@ -30,7 +42,7 @@ const workExperience = [
     image: "./images/PaletteLabs2.webp",
   },
   {
-    id: 3,
+    id: 4,
     title: "Frontend Developer",
     company: "NFT Mafia",
     duration: "2021 - 2023",
