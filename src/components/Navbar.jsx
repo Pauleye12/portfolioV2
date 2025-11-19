@@ -192,7 +192,7 @@ const Navbar = () => {
           whileHover={"onHover"}
           className="bg-secondaryBG px-5 py-2 text-white font-medium rounded-md"
           onClick={() =>
-            window.open("/assets/Pauleye_Resume_2025.pdf", "_blank")
+            window.open("/assets/Adeleye Oreoluwa Resume pro.pdf", "_blank")
           }
         >
           Resume

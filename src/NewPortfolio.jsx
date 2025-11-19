@@ -20,21 +20,20 @@ const textAnime = {
 
 const Projects = [
   {
+    title: "Tevah foundation",
+    subtext:
+      "We are a community-driven foundation dedicated to making education accessible and supporting those in need. ",
+    stacks: "ReactTS, Tailwind, GSAP, framer motion",
+    img: "Tevah",
+    url: "https://www.tevahfoundation.org/",
+  },
+  {
     title: "Genesis DAO",
     subtext:
       "A Landing page for a web3 app that not only provides staking services but also lets you earn from your own crypto assets.",
     stacks: "ReactJS, SASS, framer motion",
     img: "GenesisDAO",
     url: "https://genesis-dao-blond.vercel.app/",
-  },
-
-  {
-    title: "comment app",
-    subtext:
-      "A personal project I worked on. it allows users to post, reply, delete and vote comments.",
-    stacks: "ReactJS, TailwindCSS, framer-motion",
-    img: "comment-app",
-    url: "https://interactivecommentapp.netlify.app",
   },
   {
     title: "Moon launch",
@@ -46,13 +45,14 @@ const Projects = [
   },
 
   {
-    title: "movieeye",
+    title: "comment app",
     subtext:
-      "This is an entertainment app that displays movie and the details from TMDB api endpoints, features the search and bookmark feature.",
-    stacks: " ReactJS, TailwindCSS, framer-motion ",
-    img: "movieeye",
-    url: "https://movieeye.netlify.app/home",
+      "A personal project I worked on. it allows users to post, reply, delete and vote comments.",
+    stacks: "ReactJS, TailwindCSS, framer-motion",
+    img: "comment-app",
+    url: "https://interactivecommentapp.netlify.app",
   },
+
   {
     title: "fluid Coin",
     subtext:
@@ -60,6 +60,15 @@ const Projects = [
     stacks: " ReactJS, TailwindCSS, framer-motion",
     img: "fluidCoin",
     url: "https://fluidcoinclone.netlify.app/",
+  },
+
+  {
+    title: "movieeye",
+    subtext:
+      "This is an entertainment app that displays movie and the details from TMDB api endpoints, features the search and bookmark feature.",
+    stacks: " ReactJS, TailwindCSS, framer-motion ",
+    img: "movieeye",
+    url: "https://movieeye.netlify.app/home",
   },
 
   {
@@ -101,11 +110,11 @@ const NewPortfolio = () => {
   return (
     <div
       id="portfolio"
-      className="flex flex-col items-center justify-center px-8 lg:px-0 my-20 gap-20"
+      className="flex flex-col items-center justify-center md:px-5 px-2 lg:px-0 my-20 gap-20"
     >
-      <div className="w-full max-w-[1200px] flex items-center justify-between text-center text-4xl font-semibold ">
+      <div className="w-full max-w-[1200px] flex items-center justify-between text-center text-3xl md:text-4xl font-semibold ">
         <div>
-          <GalleryVertical className="text-secondaryBG" size={40} />
+          <GalleryVertical className="text-secondaryBG" size={30} />
         </div>
         <h1 className="relative text-white w-full text-center">
           Portfolio
@@ -113,7 +122,7 @@ const NewPortfolio = () => {
         </h1>
       </div>
 
-      <div className="flex max-w-[1200px] rounded-2xl justify-center items-center w-full lg:px-10 px-5 py-4 bg-gray-300 ">
+      <div className="flex max-w-[1200px] rounded-2xl justify-center items-center w-full lg:px-10 md:px-5 px-3 py-4 bg-gray-300 ">
         <div className=" flex flex-col md:flex-row gap-4  w-full  ">
           {/* Left Sticky Section */}
           <div className="lg:w-1/2 w-full   p-5">
@@ -123,10 +132,10 @@ const NewPortfolio = () => {
               whileInView={"inView"}
               className="sticky lg:h-screen flex flex-col justify-start lg:pt-44 items-center top-5"
             >
-              <h2 className=" text-4xl w-full text-left font-medium text-[#343433]">
+              <h2 className=" md:text-4xl text-3xl w-full text-left font-medium text-[#343433]">
                 My Most Recent works.
               </h2>
-              <p className="mt-2 text-[#343433] w-full text-left text-lg ">
+              <p className="mt-2 text-[#343433] w-full text-left md:text-lg text-base ">
                 View Demo for full functionality...
               </p>
             </motion.div>

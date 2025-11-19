@@ -1,4 +1,5 @@
 import { ContactRound, Mails, Linkedin, Github } from "lucide-react";
+import { FaMediumM } from "react-icons/fa";
 
 const Contact = () => {
   return (
@@ -7,9 +8,9 @@ const Contact = () => {
       className="w-full my-20 px-8 lg:px-0 flex items-center  justify-center"
     >
       <div className="w-full max-w-[1200px] text-white items-center flex flex-col justify-center gap-20 ">
-        <div className="w-full flex items-center justify-between text-center text-4xl font-semibold ">
+        <div className="w-full flex items-center justify-between text-center text-3xl md:text-4xl font-semibold ">
           <div>
-            <ContactRound className="text-secondaryBG" size={40} />
+            <ContactRound className="text-secondaryBG" size={30} />
           </div>
           <h1 className="relative w-full text-center">
             Contact Me
@@ -23,9 +24,9 @@ const Contact = () => {
               href="mailto:orepaul12@gmail.com"
               className="flex gap-4 items-center "
             >
-              <Mails className="text-secondaryBG" size={40} />{" "}
+              <Mails className="text-secondaryBG" size={30} />{" "}
               <div className="flex flex-col gap-1">
-                <h3 className="text-xl">Send Me A Mail</h3>
+                <h3 className="md:text-xl text-lg ">Send Me A Mail</h3>
                 <p className="text-primaryText">OrePaul12@gmail.com</p>
               </div>
             </a>
@@ -34,9 +35,9 @@ const Contact = () => {
               href="https://github.com/Pauleye12"
               className="flex gap-4 items-center "
             >
-              <Github className="text-secondaryBG" size={40} />{" "}
+              <Github className="text-secondaryBG" size={30} />{" "}
               <div className="flex flex-col gap-1">
-                <h3 className="text-xl">Github</h3>
+                <h3 className="md:text-xl text-lg">Github</h3>
                 <p className="text-primaryText">Pauleye12</p>
               </div>
             </a>
@@ -45,10 +46,22 @@ const Contact = () => {
               href="https://www.linkedin.com/in/pauleye/"
               className="flex gap-4 items-center "
             >
-              <Linkedin className="text-secondaryBG  " size={40} />{" "}
+              <Linkedin className="text-secondaryBG  " size={30} />{" "}
               <div className="flex flex-col gap-1">
-                <h3 className="text-xl">LinkedIn</h3>
+                <h3 className="md:text-xl text-lg">LinkedIn</h3>
                 <p className="text-primaryText">Pauleye</p>
+              </div>
+            </a>
+
+            <a
+              target="blank"
+              href="https://medium.com/@pauleye12"
+              className="flex gap-4 items-center "
+            >
+              <FaMediumM className="text-secondaryBG  " size={30} />{" "}
+              <div className="flex flex-col gap-1">
+                <h3 className="md:text-xl text-lg">Medium</h3>
+                <p className="text-primaryText">Pauleye12</p>
               </div>
             </a>
           </div>

@@ -82,12 +82,12 @@ const Work = () => {
   return (
     <div
       id="experience"
-      className="w-full my-20 px-8 lg:px-0 flex items-center justify-center"
+      className="w-full my-20 md:px-8 px-5 lg:px-0 flex items-center justify-center"
     >
       <div className="w-full max-w-[1200px] text-white flex flex-col justify-center gap-20 ">
-        <div className="w-full flex items-center justify-between text-center text-4xl font-semibold ">
+        <div className="w-full flex items-center justify-between text-center text-3xl md:text-4xl font-semibold ">
           <div>
-            <Briefcase className="text-secondaryBG" size={40} />
+            <Briefcase className="text-secondaryBG" size={30} />
           </div>
           <h1 className="relative w-full text-center">
             Work Experience

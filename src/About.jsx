@@ -33,10 +33,10 @@ const About = () => {
   return (
     <div
       id="about"
-      className="w-full flex justify-center items-center px-5 lg:px-0 py-6 pt-40    "
+      className="w-full flex justify-center items-center px-2 lg:px-0 py-6 pt-40    "
     >
       <div className="max-w-[1200px] px-4 w-full flex flex-col items-center text-primaryText gap-10 lg:gap-4  ">
-        <h1 className="w-full text-center text-4xl font-semibold relative text-white ">
+        <h1 className="w-full text-center text-3xl md:text-4xl font-semibold relative text-white ">
           Meet me{" "}
           <div className="w-20 h-1 bg-secondaryBG rounded-xl absolute left-1/2 translate-x-[-50%] bottom-[-9px] "></div>{" "}
         </h1>
@@ -47,7 +47,7 @@ const About = () => {
             whileInView={"inView"}
             className="lg:w-1/2 w-full   "
           >
-            <div className="max-w-[500px] w-full flex flex-col gap-3 text-lg text-justify ">
+            <div className="max-w-[500px] w-full flex flex-col gap-3 md:text-lg text-justify ">
               <p>
                 I am a self-motivated and resilient Front-End Web Developer with
                 years of experience, collaborating on multiple web-based

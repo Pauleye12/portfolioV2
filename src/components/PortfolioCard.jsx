@@ -13,11 +13,11 @@ const PortfolioCard = ({ project }) => {
         </div>
 
         <div className="p-5 flex flex-col gap-1 px-4 ">
-          <h1 className=" capitalize mb-2 text-secondaryText text-xl font-medium ">
+          <h1 className=" capitalize mb-2 text-secondaryText md:text-xl text-lg font-medium ">
             {project.title}
           </h1>
-          <p> {project.subtext} </p>
-          <p>
+          <p className="text-sm md:text-base"> {project.subtext} </p>
+          <p className="text-sm md:text-base">
             Stacks:{" "}
             <span className="text-secondaryText  capitalize">
               {project.stacks}
@@ -25,7 +25,7 @@ const PortfolioCard = ({ project }) => {
           </p>
         </div>
         <a
-          className=" bg-secondaryBG px-4 max-w-[130px] w-full py-2 rounded-md text-white text-center ml-4  "
+          className=" bg-secondaryBG px-4 max-w-[130px] w-full py-2 rounded-md text-white text-sm md:text-base text-center ml-4  "
           href={project.url}
           target="_blank"
           rel="noopener noreferrer"

@@ -2,6 +2,10 @@
 import { motion } from "framer-motion";
 const images = [
   {
+    img: "Tevah",
+    url: "https://www.tevahfoundation.org/",
+  },
+  {
     img: "comment-app",
     url: "https://interactivecommentapp.netlify.app",
   },

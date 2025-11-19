@@ -3,6 +3,14 @@ import PortfolioCard from "./components/PortfolioCard";
 
 const Projects = [
   {
+    title: "Tevah foundation",
+    subtext:
+      "We are a community-driven foundation dedicated to making education accessible and supporting those in need. ",
+    stacks: "ReactTS, Tailwind, GSAP, framer motion",
+    img: "Tevah",
+    url: "https://www.tevahfoundation.org/",
+  },
+  {
     title: "Genesis DAO",
     subtext:
       "A Landing page for a web3 app that not only provides staking services but also lets you earn from your own crypto assets.",

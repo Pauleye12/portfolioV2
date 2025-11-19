@@ -36,7 +36,7 @@ const WorkCard = ({ title, company, duration, description, image }) => {
           ease: "easeOut",
         },
       }}
-      className=" shadow-md  shadow-[#6e5cb536] text-primaryText rounded-3xl  flex flex-col gap-2 px-5 p-4  hover:shadow-lg hover:shadow-[#6e5cb536] cursor-pointer "
+      className=" shadow-md  shadow-[#6e5cb536] text-primaryText rounded-xl  flex flex-col gap-2 px-5 p-4  hover:shadow-lg hover:shadow-[#6e5cb536] cursor-pointer "
     >
       <div className="border-b border-solid border-primaryText flex justify-center items-center h-[250px]">
         <img className="object-cover" src={image} alt="" />

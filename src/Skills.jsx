@@ -115,9 +115,9 @@ const Skills = () => {
       <div className="max-w-[1200px] w-full flex gap-24 flex-col items-center ">
         <div className="w-full flex items-center text-center justify-between ">
           <div>
-            <Cpu className="text-secondaryBG" size={40} />
+            <Cpu className="text-secondaryBG" size={30} />
           </div>
-          <h1 className="w-full text-center text-white text-4xl font-semibold relative ">
+          <h1 className="w-full text-center text-white text-3xl md:text-4xl font-semibold relative ">
             Skills{" "}
             <div className="w-20 h-1 bg-secondaryBG rounded-xl absolute left-1/2 translate-x-[-50%] bottom-[-9px] "></div>{" "}
           </h1>

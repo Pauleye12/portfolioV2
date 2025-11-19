@@ -67,7 +67,7 @@ const HeroSection = () => {
   return (
     <div
       id="home"
-      className="w-full min-h-screen h-full flex justify-center  px-5 pt-[90px] bg-primaryBG "
+      className="w-full min-h-screen h-full flex justify-center  px-2 md:pt-[90px] pt-[40px] bg-primaryBG "
     >
       <div className="max-w-[1200px] h-full w-full flex-col lg:flex-row p-5 pb-0 pt-0 flex gap-10 items-center  ">
         <div className=" flex flex-col w-full lg:w-[60%] h-full justify-center items-center gap-10 translate-y-[0px]  ">
@@ -95,7 +95,9 @@ const HeroSection = () => {
                 </motion.span>
               ))}
             </div>
-            <h2 className="text-2xl mt-3">Frontend web developer</h2>
+            <h2 className="text-2xl mt-3">
+              AI Assisted Frontend Web Developer
+            </h2>
             <p className="mt-5 font-normal text-base">
               Vast Experience in Crafting Fast, Responsive, and User-Friendly
               Interfaces.
@@ -110,7 +112,7 @@ const HeroSection = () => {
             initial="initial"
             animate="animate"
             whileHover={"hover"}
-            href="/assets/Pauleye_Resume_2025.pdf"
+            href="/assets/Adeleye Oreoluwa Resume pro.pdf"
             download
             whileInView={"inView"}
             className=" text-white px-6 py-3 rounded-lg bg-secondaryBG font-medium hover:scale-150 text-lg self-end  "
