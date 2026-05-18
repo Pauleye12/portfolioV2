@@ -51,6 +51,10 @@ const images = [
     url: "https://www.awanidigitals.com/",
   },
   {
+    img: "monidesk",
+    url: "https://monidesk-frontend.onrender.com/",
+  },
+  {
     img: "Tevah",
     url: "https://www.tevahfoundation.org/",
   },
