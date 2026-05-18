@@ -34,6 +34,16 @@ const skillList = [
     width: "69",
   },
   {
+    name: "Angular",
+    image: "./images/angular.webp",
+    width: "69",
+  },
+  {
+    name: "kubernetes",
+    image: "./images/kubernetes.webp",
+    width: "89",
+  },
+  {
     name: "WAGMI",
     image: "./images/github.png",
     width: "60",
@@ -140,6 +150,7 @@ const Skills = () => {
             <img
               className="w-16 object-contain"
               key={index}
+              alt={skill.name}
               src={`./images/${skill.name}.webp`}
             />
           ))}
@@ -149,6 +160,7 @@ const Skills = () => {
             <img
               className="w-16 object-contain"
               key={index}
+              alt={skill.name}
               src={`./images/${skill.name}.webp`}
             />
           ))}

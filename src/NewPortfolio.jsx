@@ -20,6 +20,14 @@ const textAnime = {
 
 const Projects = [
   {
+    title: "Monidesk",
+    subtext:
+      "An intelligence-driven B2B platform that digitizes small business workflows (inventory, sales, receivables) and applies behavioral scoring to generate automated, lender-ready credit profiles for underserved MSMEs ",
+    stacks: "ReactTS, TailwindCSS, framer motion, python",
+    img: "monidesk",
+    url: "https://monidesk-frontend.onrender.com/",
+  },
+  {
     title: "Tevah foundation",
     subtext:
       "We are a community-driven foundation dedicated to making education accessible and supporting those in need. ",
@@ -27,6 +35,7 @@ const Projects = [
     img: "Tevah",
     url: "https://www.tevahfoundation.org/",
   },
+
   {
     title: "Genesis DAO",
     subtext:
@@ -34,6 +43,14 @@ const Projects = [
     stacks: "ReactJS, SASS, framer motion",
     img: "GenesisDAO",
     url: "https://genesis-dao-blond.vercel.app/",
+  },
+  {
+    title: "Awani Digitals",
+    subtext:
+      "Developed a dynamic web application for a marketing brand, featuring an integrated content management blog and a seamless user-engagement funnel. ",
+    stacks: "NextTS, TailwindCSS, framer motion, Supabase",
+    img: "awani1",
+    url: "https://www.awanidigitals.com/",
   },
   {
     title: "Moon launch",

@@ -47,6 +47,10 @@ const scrollDownContainer = {
 
 const images = [
   {
+    img: "awani1",
+    url: "https://www.awanidigitals.com/",
+  },
+  {
     img: "Tevah",
     url: "https://www.tevahfoundation.org/",
   },

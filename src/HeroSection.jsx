@@ -96,7 +96,7 @@ const HeroSection = () => {
               ))}
             </div>
             <h2 className="text-2xl mt-3">
-              AI Assisted Frontend Web Developer
+              AI Assisted Design Engineer and Frontend Web Developer
             </h2>
             <p className="mt-5 font-normal text-base">
               Vast Experience in Crafting Fast, Responsive, and User-Friendly

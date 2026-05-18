@@ -51,7 +51,7 @@ const About = () => {
               <p>
                 I am a self-motivated and resilient Front-End Web Developer with
                 years of experience, collaborating on multiple web-based
-                projects.
+                projects including AI powered systems and applications.
               </p>{" "}
               <p>
                 My passion lies in developing customized interfaces with
